@@ -1,3 +1,4 @@
+![InkedESP-12E-Development-Board-ESP8266-NodeMCU-Pinout_LI](https://user-images.githubusercontent.com/69695347/125140187-2f642b00-e127-11eb-8518-19cdade6cac4.jpg)
 this is edited project for i2c lcd and A button problem
 
 use d1 & d2 for i2c lcd (right 3v3 & right gnd)
