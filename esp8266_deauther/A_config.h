@@ -12,7 +12,7 @@
 
 
 #define SH1106_I2C
-//$define SSD1306_I2C
+//#define SSD1306_I2C
 #define I2C_ADDR 0x3C
 #define I2C_SDA 5
 #define I2C_SCL 4
