@@ -145,7 +145,7 @@
 // =============== DISPLAY =============== //
 
 #ifndef DISPLAY_TIMEOUT
-  #define DISPLAY_TIMEOUT 600
+  #define DISPLAY_TIMEOUT 5000
 #endif /* ifndef DISPLAY_TIMEOUT */
 
 #ifndef DISPLAY_TEXT
