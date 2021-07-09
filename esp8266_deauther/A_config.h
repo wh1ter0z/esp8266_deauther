@@ -21,8 +21,6 @@
 #define BUTTON_DOWN 12
 #define BUTTON_A 0
 
-#endif
-// ========= FALLBACK ========= //
 
 // ===== AUTOSAVE ===== //
 #ifndef AUTOSAVE_ENABLED
