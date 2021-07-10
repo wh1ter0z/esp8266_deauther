@@ -21,7 +21,7 @@
 #define BUTTON_DOWN 12
 #define BUTTON_A 0
 
-#if defined(DEFAULT_ESP8266) || defined(NODEMCU))
+#if defined(DEFAULT_ESP8266) || defined(NODEMCU)
    #define LED_DIGITAL
    #define LED_PIN_R 16 // NodeMCU on-board LED
    #define LED_PIN_B 2  // ESP-12 LED
