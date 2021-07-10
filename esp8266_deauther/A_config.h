@@ -21,6 +21,12 @@
 #define BUTTON_DOWN 12
 #define BUTTON_A 0
 
+#define LED_NEOPIXEL_GRB
+
+#define LED_NUM 1
+#define LED_NEOPIXEL_PIN 9
+#define LED_MODE_BRIGHTNESS 10
+
 #if defined(DEFAULT_ESP8266) || defined(NODEMCU)
    #define LED_DIGITAL
    #define LED_PIN_R 16 // NodeMCU on-board LED
@@ -116,6 +122,18 @@
 #ifndef CLI_ECHO
   #define CLI_ECHO true
 #endif /* ifndef CLI_ECHO */
+
+// =============== LED =============== //
+#if defined(LED_NEOPIXEL_RGB) || defined(LED_NEOPIXEL_GRB)
+  #define LED_NEOPIXEL
+#endif /* if defined(LED_NEOPIXEL_RGB) || defined(LED_NEOPIXEL_GRB) */
+
+#if !defined(LED_DIGITAL) && !defined(LED_RGB) && !defined(LED_NEOPIXEL) && !defined(LED_MY92) && !defined(LED_DOTSTAR)
+  #define LED_DIGITAL
+  #define USE_LED false
+#else // if !defined(LED_DIGITAL) && !defined(LED_RGB) && !defined(LED_NEOPIXEL) && !defined(LED_MY92) && !defined(LED_DOTSTAR)
+  #define USE_LED true
+#endif // if !defined(LED_DIGITAL) && !defined(LED_RGB) && !defined(LED_NEOPIXEL) && !defined(LED_MY92) && !defined(LED_DOTSTAR)
 
 #ifndef LED_ANODE
   #define LED_ANODE false
