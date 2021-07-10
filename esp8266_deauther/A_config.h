@@ -135,6 +135,18 @@
   #define USE_LED true
 #endif // if !defined(LED_DIGITAL) && !defined(LED_RGB) && !defined(LED_NEOPIXEL) && !defined(LED_MY92) && !defined(LED_DOTSTAR)
 
+#ifndef LED_PIN_R
+  #define LED_PIN_R 255
+#endif /* ifndef LED_PIN_R */
+
+#ifndef LED_PIN_G
+  #define LED_PIN_G 255
+#endif /* ifndef LED_PIN_G */
+
+#ifndef LED_PIN_B
+  #define LED_PIN_B 255
+#endif /* ifndef LED_PIN_B */
+
 #ifndef LED_ANODE
   #define LED_ANODE false
 #endif /* ifndef LED_ANODE */
